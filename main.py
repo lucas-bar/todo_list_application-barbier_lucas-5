@@ -1,6 +1,32 @@
 # main.py
-from todo.task import Task
-from todo.todolist import TodoList
+class Task:
+    def __init__(self, title, completed=False):
+        self.title = title
+        self.completed = completed
+
+    def mark_as_completed(self):
+        self.completed = True
+
+    def __str__(self):
+        return f"{'[X]' if self.completed else '[ ]'} {self.title}"
+
+
+class TodoList:
+    def __init__(self):
+        self.tasks = []
+
+    def add_task(self, title):
+        task = Task(title)
+        self.tasks.append(task)
+
+    def remove_task(self, index):
+        if 0 <= index < len(self.tasks):
+            del self.tasks[index]
+
+    def display_tasks(self):
+        for index, task in enumerate(self.tasks):
+            print(f"{index + 1}. {task}")
+
 
 def main():
     todo_list = TodoList()
@@ -26,6 +52,7 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
+
 
 if __name__ == "__main__":
     main()
