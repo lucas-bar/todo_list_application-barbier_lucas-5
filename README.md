@@ -5,7 +5,7 @@
 -clone my repo
 
 -enter the following command in the path of the cloned repo : 
-"python main.py"
+```python main.py```
 
 -follow the instruction of the app .
 
