@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+todo_list_application_barbier_lucas_5.egg-info/PKG-INFO
+todo_list_application_barbier_lucas_5.egg-info/SOURCES.txt
+todo_list_application_barbier_lucas_5.egg-info/dependency_links.txt
+todo_list_application_barbier_lucas_5.egg-info/entry_points.txt
+todo_list_application_barbier_lucas_5.egg-info/top_level.txt
