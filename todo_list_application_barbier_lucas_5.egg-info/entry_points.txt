@@ -1,2 +1,0 @@
-[console_scripts]
-todo_list_application = main:main
